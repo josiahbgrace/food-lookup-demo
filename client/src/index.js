@@ -8,8 +8,6 @@ import App from './containers/app'
 import './index.css'
 
 const target = document.querySelector('#root')
-console.log(ReactDOM.render)
-console.log(store);
 
 ReactDOM.render(
   <Provider store={store}>
