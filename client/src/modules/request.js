@@ -10,7 +10,7 @@ export default (state = initialState, action) => {
       return {
         ...state,
         result: action.payload,
-        pendingRequest: null
+        pendingRequest: false
       }
 
     case START_REQUEST:

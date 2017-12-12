@@ -30,7 +30,7 @@ const Home = props => (
     <p><button onClick={() => props.changePage()}>Go to about page via redux</button></p>
     <p><button onClick={props.requestResponse}>Make a request to requestb.in</button></p>
     <p>
-      {props.pendingRequest ? "pending" : props.request && `${JSON.stringify(props.request)}`}
+      {props.pendingRequest ? "pending" : props.request && `${JSON.stringify(props.request, null, 4)}`}
     </p>
   </div>
 )
